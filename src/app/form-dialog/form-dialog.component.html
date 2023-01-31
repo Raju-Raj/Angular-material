@@ -1,0 +1,22 @@
+<form class="example-form" >
+    <div ngModelGroup #add="ngModelGroup">
+    <h1>{{data.title}}</h1>
+    <mat-form-field class="example-full-width">
+      <mat-label>ID</mat-label>
+      <input matInput ngModel name="id">
+    </mat-form-field>&nbsp;
+    <mat-form-field class="example-full-width">
+        <mat-label>Image</mat-label>
+        <input matInput ngModel name="img">
+      </mat-form-field>&nbsp;
+      <mat-form-field class="example-full-width">
+        <mat-label>Published</mat-label>
+        <input matInput ngModel name="published">
+      </mat-form-field>&nbsp;
+      <mat-form-field class="example-full-width">
+        <mat-label>Information</mat-label>
+        <input matInput ngModel name="info">
+      </mat-form-field>&nbsp;
+      <button mat-raised-button color="primary" [mat-dialog-close]="add.value">ADD</button>
+    </div>
+</form>

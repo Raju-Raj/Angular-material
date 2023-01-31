@@ -1,0 +1,49 @@
+<div class="flex">
+    <div class="m-auto">
+
+      <mat-card>
+
+       <mat-card-header>
+        <mat-card-title>
+            Login Here
+        </mat-card-title>
+
+        <mat-card-subtitle>
+            Enter your email and password to login
+        </mat-card-subtitle>
+       </mat-card-header>
+
+    <form action="">
+
+        <mat-card-content>
+            
+                <mat-form-field>
+                 <mat-label>Email</mat-label>
+                 <input matInput type="email" required>
+                </mat-form-field>
+
+                <mat-divider></mat-divider>
+
+                <mat-form-field>
+                 <mat-label>Password</mat-label>
+                 <input matInput type="password" required>
+                </mat-form-field>
+
+                <mat-divider></mat-divider>
+           
+        </mat-card-content>
+
+        <mat-card-actions>
+            <button (click)="login()" color="accent" type="submit" mat-raised-button>
+                <span *ngIf="!isLoading">Login</span>
+                <mat-spinner *ngIf="isLoading" diameter="30"></mat-spinner>
+            </button>
+        </mat-card-actions>
+        
+
+    </form>
+
+      </mat-card>
+
+    </div>
+</div>
